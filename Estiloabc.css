@@ -1,0 +1,126 @@
+/* Media Queries */
+
+/* Hasta 480px (Redmi 9C, móviles pequeños) */
+@media (max-width: 480px) {
+    .button-container {
+        grid-template-columns: repeat(2, 1fr); /* Menos botones por fila en pantallas más pequeñas */
+        gap: 5px; /* Reducir el espacio entre los botones */
+        margin-bottom: 50px; /* Ajustar el espacio inferior */
+        width: 100%; /* Asegurar que los botones ocupen todo el ancho */
+    }
+
+    button {
+        font-size: 24px; /* Reducir el tamaño de la fuente en pantallas pequeñas */
+        padding: 8px 12px; /* Ajustar el tamaño de los botones */
+    }
+
+    #image {
+        width: 100px; /* Reducir el tamaño de la imagen */
+    }
+
+    #title {
+        font-size: 14px; /* Reducir el tamaño del título */
+        width: 120px; /* Ajustar el tamaño del título */
+    }
+
+    .gif-imagen {
+        width: 120px;  /* Reducir tamaño del gif */
+        margin-top: 230px; /* Ajustar el espacio inferior para no superponerse con los botones */
+    }
+
+    .dialogo {
+        font-size: 14px; /* Reducir tamaño del texto del diálogo */
+        padding: 6px;
+    }
+
+    .button-left {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%); /* Centrado */
+    }
+}
+
+/* Hasta 768px (pantallas medianas, como Google Pixel 7 Pro, Samsung S23 Ultra) */
+@media (max-width: 768px) {
+    .button-container {
+        grid-template-columns: repeat(4, 1fr); /* Menos botones por fila en pantallas medianas */
+        gap: 10px; /* Reducir espacio entre los botones */
+        margin-bottom: 100px; /* Ajustar espacio inferior */
+        width: 100%;
+    }
+
+    button {
+        font-size: 30px; /* Tamaño de fuente ajustado para móviles medianos */
+        padding: 10px 15px; /* Ajuste de padding */
+    }
+
+    #image {
+        width: 120px; /* Reducir tamaño de la imagen */
+    }
+
+    #title {
+        font-size: 16px; /* Reducir tamaño del título */
+        width: 140px; /* Ajustar el ancho del título */
+    }
+
+    .gif-imagen {
+        width: 150px;  /* Reducir tamaño del gif */
+        margin-top: 280px; /* Ajustar el espacio para evitar que se sobreponga con los botones */
+    }
+
+    .dialogo {
+        font-size: 16px; /* Reducir tamaño del texto del diálogo */
+        padding: 8px;
+    }
+
+    .button-left {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%); /* Centrado */
+    }
+}
+
+/* Hasta 1024px (tabletas y pantallas medianas) */
+@media (max-width: 1024px) {
+    .button-container {
+        grid-template-columns: repeat(6, 1fr); /* 6 botones por fila en tabletas */
+    }
+
+    button {
+        font-size: 36px; /* Ajuste del tamaño de la fuente para tabletas */
+        padding: 12px 18px;
+    }
+
+    #image {
+        width: 150px; /* Tamaño ajustado de la imagen */
+    }
+
+    #title {
+        font-size: 18px; /* Ajuste del tamaño del título */
+        width: 160px; /* Ancho ajustado del título */
+    }
+
+    .gif-imagen {
+        width: 180px; /* Ajustar tamaño del gif */
+    }
+}
+
+/* Escritorios, pantallas grandes */
+@media (min-width: 1200px) {
+    .button-container {
+        grid-template-columns: repeat(9, 1fr); /* 9 botones por fila en pantallas grandes */
+    }
+
+    button {
+        font-size: 45px; /* Tamaño de fuente ajustado para pantallas grandes */
+        padding: 12px 24px;
+    }
+
+    #image {
+        width: 200px; /* Ajuste de la imagen */
+    }
+
+    .gif-imagen {
+        width: 210px; /* Ajuste de tamaño del gif */
+    }
+}
